@@ -8,14 +8,13 @@
     anyhow                          = "1.0"
     async-stream                    = "0.3"
     async-trait                     = "0.1"
-    bindle                          = { version = "0.8.0", default-features = false, features = ["client", "server", "caching"] }
+    bindle                          = { git = "https://github.com/dicej/bindle", default-features = false, features = ["client", "server", "caching"] }
     cap-std                         = "^0.24"
     clap                            = "2.33.3"
     docker_credential               = "1.0.1"
     env-file-reader                 = "0.2"
     futures                         = "0.3"
     hyper                           = { version = "0.14", features = ["full"] }
-    indexmap                        = { version = "^1.6.2", features = ["serde"] }
     oci-distribution                = "0.6"
     reqwest                         = { version = "0.11", features = ["stream"] }
     serde                           = { version = "1.0", features = ["derive"] }
@@ -29,11 +28,11 @@
     tracing                         = { version = "0.1", features = ["log"] }
     tracing-futures                 = "0.2"
     url-escape                      = "0.1"
-    wasi-common                     = "0.35.3"
-    wasi-cap-std-sync               = "0.35.3"
-    wasi-experimental-http-wasmtime = "0.10.0"
-    wasmtime                        = "0.35.3"
-    wasmtime-wasi                   = "0.35.3"
-    wasmtime-cache                  = "0.35.3"
+    wasi-common                     = "0.38.0"
+    wasi-cap-std-sync               = "0.38.0"
+    wasi-experimental-http-wasmtime = { git = "https://github.com/dicej/wasi-experimental-http" }#"0.10.0"
+    wasmtime                        = "0.38.0"
+    wasmtime-wasi                   = "0.38.0"
+    wasmtime-cache                  = "0.38.0"
     wat                             = "1.0.37"
     chrono                          = "0.4.19"
